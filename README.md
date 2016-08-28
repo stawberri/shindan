@@ -22,8 +22,9 @@ Sends a request to ShindanMaker for the provided `shindanID` with your `name`.
 * `shindanID` *number*. You can find this in your shindan's uri. Must be an integer.
 * `name` *string*. Who is the diagnosis for? Can't be an empty string, but can be anything else ShindanMaker supports.
 * `promise` / `callback` You can use either or both.
-  - `result` *string*. Diagnosis result.
-  - `error` *Error*. You can get request errors, which are internet issues, and parsing errors, which would happen because ShindanMaker changed their site markup.
+  - `error` *Error*. You can get request errors and parsing errors
+  - `result` *object*. Diagnosis result. Currently only has one property but will eventually have more.
+    - `result` *string*. Your result.
 
 Generally, providing the same pair of arguments will give you the same results for a day. [Try it yourself](https://en.shindanmaker.com/587458) for more details.
 
@@ -36,6 +37,7 @@ Scrapes ShindanMaker's list page, passing `options` as a query string.
     - `mode` Your list mode. You can find them by browsing [ShindanMaker](https://en.shindanmaker.com/c/list), but the most useful one is probably `hot` for HOT items.
     - `p` List page.
 * `promise` / `callback` You can use either or both.
+  - `error` *Error*. You can get request errors.
   - `results` *array*. An array of objects representing the items found in the list
     - `order` *number*. The current list index
     - `id` *number*. Shindan ID
