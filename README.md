@@ -27,7 +27,7 @@ Sends a request to ShindanMaker for the provided `shindanID` with your `name`.
 
 Generally, providing the same pair of arguments will give you the same results for a day. [Try it yourself](https://en.shindanmaker.com/587458) for more details.
 
-### promise = shindan.list(options[, callback])
+### promise = shindan.list([options], [callback])
 Scrapes ShindanMaker's list page, passing `options` as a query string.
 
 * `options` You can either provide an object or a string here. If you leave this blank, you'll get the newest listing.
