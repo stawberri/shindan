@@ -1,0 +1,29 @@
+{
+  "name": "shindan",
+  "version": "0.0.0",
+  "description": "shindanmaker web scraper",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "node -i -e \"let $ = require('.')\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://stawberri@github.com/stawberri/shindan.git"
+  },
+  "keywords": [
+    "shindanmaker",
+    "shindan",
+    "scraper",
+    "fun"
+  ],
+  "author": "Pudding <aideen@aideen.pw> (https://aideen.pw/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stawberri/shindan/issues"
+  },
+  "homepage": "https://github.com/stawberri/shindan#readme",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "request": "^2.74.0"
+  }
+}
