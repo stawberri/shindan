@@ -42,8 +42,8 @@ Scrapes ShindanMaker's list page, passing `options` as a query string.
     - `order` *number*. The current list index
     - `id` *number*. Shindan ID
     - `title` *string*. Shindan name / title
-    - `diagnoses` *number*. Number of diagnoses given. Sometimes inaccurate.
-    - `description` *string*. Shindan description
-    - `favorites` *number*. Number of favorites
     - `author` *string*. Whoever wrote the shindan
+    - `description` *string*. Shindan description
     - `tags` *array*. An array of strings representing the tags given to this shindan
+    - `favorites` *number*. Number of favorites
+    - `diagnoses` *number*. Number of diagnoses given. Sometimes inaccurate.
