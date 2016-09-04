@@ -15,8 +15,10 @@ shindan
 
 Authors on ShindanMaker create short, often comical diagnoses based on message fragments that are shuffled together, and then visitors enter their names and read these random diagnoses with their names inserted in. I couldn't find an official API to do this on ShindanMaker's site, so I decided to just scrape their website for data.
 
-## Usage
-### promise = shindan.diagnose(shindanID, name[, callback])
+## Diagnoses
+```js
+promise = shindan.diagnose(shindanID, name[, callback])
+```
 Sends a request to ShindanMaker for the provided `shindanID` with your `name`.
 
 * `shindanID` *number*. You can find this in your shindan's uri. Must be an integer.
@@ -28,7 +30,10 @@ Sends a request to ShindanMaker for the provided `shindanID` with your `name`.
 
 Generally, providing the same pair of arguments will give you the same results for a day. [Try it yourself](https://en.shindanmaker.com/587458) for more details.
 
-### promise = shindan.list([options], [callback])
+## Shindan listing
+```js
+promise = shindan.list([options], [callback])
+```
 Scrapes ShindanMaker's list page, passing `options` as a query string.
 
 * `options` You can either provide an object or a string here. If you leave this blank, you'll get the newest listing.
