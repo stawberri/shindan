@@ -4,7 +4,7 @@
   "description": "shindanmaker web scraper",
   "main": "lib/index.js",
   "scripts": {
-    "test": "node -i -e \"let $ = require('.')\""
+    "test": "node -i -e \"const $ = require('.')\""
   },
   "engines": {
     "node": ">=6"
