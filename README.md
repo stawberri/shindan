@@ -2,6 +2,7 @@
 shindanmaker web scraper
 
 [![NPM](https://nodei.co/npm/shindan.png?mini=true)](https://nodei.co/npm/shindan/)
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 
 shindan is a web scraper for [ShindanMaker](https://en.shindanmaker.com/), a joke fortune telling website.
 
